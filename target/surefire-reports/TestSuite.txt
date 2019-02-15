@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 27.325 s <<< FAILURE! - in TestSuite
+checkpostmethod(APITest.rest.checkpost)  Time elapsed: 3.666 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [415]
+	at APITest.rest.checkpost.checkpostmethod(checkpost.java:40)
+
+getassignedassetdetails(APITest.rest.assignedassetdetails)  Time elapsed: 20.229 s  <<< FAILURE!
+java.net.ConnectException: Connection timed out: connect
+	at APITest.rest.assignedassetdetails.getassignedassetdetails(assignedassetdetails.java:19)
+

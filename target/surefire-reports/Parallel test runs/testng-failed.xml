@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parallel test runs]" parallel="tests">
+  <listeners>
+    <listener class-name="gridnodes.listeningcount"/>
+  </listeners>
+  <test name="Rest 04(failed)" parallel="tests">
+    <classes>
+      <class name="APITest.rest.checkpost">
+        <methods>
+          <include name="checkpostmethod"/>
+        </methods>
+      </class> <!-- APITest.rest.checkpost -->
+    </classes>
+  </test> <!-- Rest 04(failed) -->
+  <test name="Rest 05(failed)" parallel="tests">
+    <classes>
+      <class name="APITest.rest.assignedassetdetails">
+        <methods>
+          <include name="getassignedassetdetails"/>
+        </methods>
+      </class> <!-- APITest.rest.assignedassetdetails -->
+    </classes>
+  </test> <!-- Rest 05(failed) -->
+</suite> <!-- Failed suite [Parallel test runs] -->

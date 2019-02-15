@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test runs" parallel="tests">
+ 
+  <listeners>
+       <listener class-name="gridnodes.listeningcount"/>
+       <listener class-name="gridnodes.StepLibSuiteListener"/>
+  </listeners>
+ 
+<test name="Rest 01">
+    <classes>
+        <class name="APITest.rest.checkstatuscode" ></class>
+    </classes>
+</test>
+
+<test name="Rest 02">
+    <classes>
+        <class name="APITest.rest.getunassignedinterns" ></class>
+    </classes>
+</test>
+ 
+ <test name="Rest 03">
+    <classes>
+        <class name="APITest.rest.validatebody" ></class>
+    </classes>
+</test>
+  <test name="Rest 04">
+    <classes>
+        <class name="APITest.rest.checkpost" ></class>
+    </classes>
+</test>
+  <test name="Rest 05">
+    <classes>
+        <class name="APITest.rest.assignedassetdetails" ></class>
+    </classes>
+</test>
+<test name="Rest 06">
+    <classes>
+        <class name="APITest.rest.getcandidate" ></class>
+    </classes>
+</test>
+
+
+</suite>
